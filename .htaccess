@@ -2,12 +2,17 @@ Options -Indexes
 ErrorDocument 404 /404.php
 
 <IfModule mod_php5.c>
+<<<<<<< HEAD
   php_flag allow_call_time_pass_reference 1
   php_flag session.use_trans_sid off
 
   #php_value display_errors 1
 
   #php_value mbstring.func_overload 2
+=======
+  php_flag session.use_trans_sid off
+  #php_value display_errors 1
+>>>>>>> 661264508b6a1c68305db379e20d2035c605c128
   #php_value mbstring.internal_encoding UTF-8
 </IfModule>
 
@@ -30,4 +35,10 @@ ErrorDocument 404 /404.php
   ExpiresActive on
   ExpiresByType image/jpeg "access plus 3 day"
   ExpiresByType image/gif "access plus 3 day"
+<<<<<<< HEAD
+=======
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"  
+>>>>>>> 661264508b6a1c68305db379e20d2035c605c128
 </IfModule>
