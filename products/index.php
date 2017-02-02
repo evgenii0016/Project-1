@@ -7,6 +7,7 @@ $APPLICATION->SetTitle("Продукция");
 	Array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
@@ -72,6 +73,7 @@ $APPLICATION->SetTitle("Продукция");
 		"IBLOCK_TYPE" => "1",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"INSTANT_RELOAD" => "N",
+		"LABEL_PROP" => "-",
 		"LINE_ELEMENT_COUNT" => "1",
 		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
 		"LINK_IBLOCK_ID" => "",
