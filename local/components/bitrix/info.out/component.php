@@ -10,6 +10,7 @@ if ($this->StartResultCache(3600))
     while($ar_result = $db_list->GetNext())
     {
         $arResult[] = array(
+		    "ID" => $ar_result['ID'],
                     "CHARESTERISTIC" => $ar_result['CHARESTERISTIC'],
                     "ART" => $ar_result['ART'],
                     "DESCRIOTION" => $ar_result['DESCRIOTION'] 
