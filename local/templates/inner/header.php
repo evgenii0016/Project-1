@@ -1,7 +1,10 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
 IncludeTemplateLangFile(__FILE__);
+//require (/var/www/html/test.local/local/php_interface/include/s1/init.php);
+include ($_SERVER["DOCUMENT_ROOT"]."/local/php_interface/include/s1/init.php");
 ?> 
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
