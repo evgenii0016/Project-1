@@ -10,7 +10,7 @@ AddEventHandler("main", "OnAfterUserRegister", "blockyandexmail");
 
     function BeforeReg()
     {
-                if (strpos($arFields["EMAIL"],'@mail.ru' )  === FALSE and (strpos($arFields["EMAIL"],'@list.ru' ) === FALSE ))
+                if (stripos($arFields["EMAIL"],'@mail.ru' )  === FALSE and (stripos($arFields["EMAIL"],'@list.ru' ) === FALSE ))
                 {
                     echo 'SUCCESS';
 
