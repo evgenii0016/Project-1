@@ -28,10 +28,19 @@ $APPLICATION->SetTitle("Тест");
 		"USE_BACKURL" => "Y"
 	)
 );?><br>
-<?php
+ <?php
 echo date ("j.m.Y H:i:s") ;
 
 $date_reg=date ("j.m.Y H:i:s");
 $date_reg24=$date_reg-24;
 echo '</br>';
-echo $date_reg24;?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+echo $date_reg24;?> <br>
+<?php
+$arFields["EMAIL"]='test@mail.ru';
+echo $arFields["EMAIL"];
+if (stripos($arFields["EMAIL"],'@mail.ru' )  === FALSE and (stripos($arFields["EMAIL"],'@list.ru' ) === FALSE ))
+                {
+                    echo 'SUCCESS';
+
+                } else echo '   false';
+?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

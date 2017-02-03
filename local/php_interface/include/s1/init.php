@@ -50,7 +50,7 @@ AddEventHandler("main", "OnAfterUserRegister", "blockyandexmail");
 		'ID пользователя: '.
                 'Имя пользователя: '.
                 'Login пользователя: '.
-                'Email пользователя: '..
+                'Email пользователя: '.
                 'Дата регистрации пользователя: '
         );
 
@@ -59,9 +59,9 @@ AddEventHandler("main", "OnAfterUserRegister", "blockyandexmail");
         return "agent()";
     }
 
-function testAgent()
-{
-    mail('evgenii0016@gmail.com', 'Агент', 'Агент');
-    return "testAgent();";
-}
+//function testAgent()
+//{
+ //   mail('evgenii0016@gmail.com', 'Агент', 'Агент');
+ //   return "testAgent();";
+//}
 ?>

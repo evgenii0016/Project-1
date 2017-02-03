@@ -10,9 +10,11 @@ AddEventHandler("main", "OnAfterUserRegister", "blockyandexmail");
 
     function BeforeReg()
     {
+
+		echo '1 '.$arFields["EMAIL"];
                 if (stripos($arFields["EMAIL"],'@mail.ru' )  === FALSE and (stripos($arFields["EMAIL"],'@list.ru' ) === FALSE ))
                 {
-                    echo 'SUCCESS';
+                    echo 'SUCCESS'; echo '11  '.$arFields["EMAIL"];
 
                 }
                 else 
@@ -59,9 +61,9 @@ AddEventHandler("main", "OnAfterUserRegister", "blockyandexmail");
         return "agent()";
     }
 
-function testAgent()
-{
-    mail('evgenii0016@gmail.com', 'Агент', 'Агент');
-    return "testAgent();";
-}
+//function testAgent()
+//{
+ //   mail('evgenii0016@gmail.com', 'Агент', 'Агент');
+ //   return "testAgent();";
+//}
 ?>
